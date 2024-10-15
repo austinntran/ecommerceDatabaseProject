@@ -15,14 +15,22 @@ GROUP BY seller_username;
 -- 2 joins
 -- Select users names with their emails
 SELECT fullname, email 
-FROM (User 
-INNER JOIN User_email ON User.username = User_email.username);
+FROM (
+    User INNER JOIN User_email ON User.username = User_email.username
+);
 
 -- Select users along with their ratings
 SELECT fullname, rating
-FROM (User
-INNER JOIN User_Rates ON User.username = rating.ratee);
+FROM (
+    User INNER JOIN User_Rates ON User.username = rating.ratee
+);
 
 -- 2 subqueries
 
+
 -- 4 anything that uses something above
+-- Get average user rating, listed by their fullname
+SELECT fullname, AVG(rating) AS average_rating 
+FROM (
+    USER INNER JOIN User_Rates ON User.username = rating.ratee
+) GROUP BY User.fullname;
