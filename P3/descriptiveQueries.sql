@@ -13,6 +13,15 @@ FROM ListedItem
 GROUP BY seller_username;
 
 -- 2 joins
+-- Select users names with their emails
+SELECT fullname, email 
+FROM (User 
+INNER JOIN User_email ON User.username = User_email.username);
+
+-- Select users along with their ratings
+SELECT fullname, rating
+FROM (User
+INNER JOIN User_Rates ON User.username = rating.ratee);
 
 -- 2 subqueries
 
