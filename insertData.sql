@@ -1,139 +1,71 @@
-GO  
-
- 
-
+GO
 USE PROJECT  
 
 -- Users (31)
-
 INSERT INTO [User] (username, passhash, fullname, isbuyer, isseller)   
-
 VALUES ('wahooo', '5e884898da28047151d0e56f8dc6292773603d0d6aabbdd62a11ef721d1542d8', 'Wahoo Johnson', 1, 0);  
-
 INSERT INTO [User] (username, passhash, fullname, isbuyer, isseller)   
-
 VALUES ('johnsmith99', '5e884898da28047151d0e56f8dc6292773603d0d6aabbdd62a11ef721d1542d8', 'John Smith', 1, 0); 
-
 INSERT INTO [User] (username, passhash, fullname, isbuyer, isseller)   
-
 VALUES ('janedoe88', '5e884898da28047151d0e56f8dc6292773603d0d6aabbdd62a11ef721d1542d8', 'Jane Doe', 0, 1); 
-
 INSERT INTO [User] (username, passhash, fullname, isbuyer, isseller)   
-
 VALUES ('buyer12345', '5e884898da28047151d0e56f8dc6292773603d0d6aabbdd62a11ef721d1542d8', 'Buyer Example', 1, 0); 
-
 INSERT INTO [User] (username, passhash, fullname, isbuyer, isseller)   
-
 VALUES ('seller98765', '5e884898da28047151d0e56f8dc6292773603d0d6aabbdd62a11ef721d1542d8', 'Seller Example', 0, 1); 
-
 INSERT INTO [User] (username, passhash, fullname, isbuyer, isseller)   
-
 VALUES ('emilybrown12', '5e884898da28047151d0e56f8dc6292773603d0d6aabbdd62a11ef721d1542d8', 'Emily Brown', 1, 1); 
-
 INSERT INTO [User] (username, passhash, fullname, isbuyer, isseller)   
-
 VALUES ('michaeljordan', '5e884898da28047151d0e56f8dc6292773603d0d6aabbdd62a11ef721d1542d8', 'Michael Jordan', 0, 1); 
-
 INSERT INTO [User] (username, passhash, fullname, isbuyer, isseller)   
-
 VALUES ('carlajones33', '5e884898da28047151d0e56f8dc6292773603d0d6aabbdd62a11ef721d1542d8', 'Carla Jones', 1, 1); 
-
 INSERT INTO [User] (username, passhash, fullname, isbuyer, isseller)   
-
 VALUES ('samsamuel56', '5e884898da28047151d0e56f8dc6292773603d0d6aabbdd62a11ef721d1542d8', 'Sam Samuel', 0, 1); 
-
 INSERT INTO [User] (username, passhash, fullname, isbuyer, isseller)   
-
 VALUES ('victorwayne22', '5e884898da28047151d0e56f8dc6292773603d0d6aabbdd62a11ef721d1542d8', 'Victor Wayne', 1, 1); 
-
 INSERT INTO [User] (username, passhash, fullname, isbuyer, isseller)   
-
 VALUES ('mariagarcia66', '5e884898da28047151d0e56f8dc6292773603d0d6aabbdd62a11ef721d1542d8', 'Maria Garcia', 0, 1); 
-
 INSERT INTO [User] (username, passhash, fullname, isbuyer, isseller)   
-
 VALUES ('peterparker77', '5e884898da28047151d0e56f8dc6292773603d0d6aabbdd62a11ef721d1542d8', 'Peter Parker', 1, 0); 
-
 INSERT INTO [User] (username, passhash, fullname, isbuyer, isseller)   
-
 VALUES ('brucelindley11', '5e884898da28047151d0e56f8dc6292773603d0d6aabbdd62a11ef721d1542d8', 'Bruce Lindley', 0, 1); 
-
 INSERT INTO [User] (username, passhash, fullname, isbuyer, isseller)   
-
 VALUES ('davidclark44', '5e884898da28047151d0e56f8dc6292773603d0d6aabbdd62a11ef721d1542d8', 'David Clark', 1, 1); 
-
 INSERT INTO [User] (username, passhash, fullname, isbuyer, isseller)   
-
 VALUES ('nancyallen98', '5e884898da28047151d0e56f8dc6292773603d0d6aabbdd62a11ef721d1542d8', 'Nancy Allen', 0, 1); 
-
 INSERT INTO [User] (username, passhash, fullname, isbuyer, isseller)   
-
 VALUES ('jacobking33', '5e884898da28047151d0e56f8dc6292773603d0d6aabbdd62a11ef721d1542d8', 'Jacob King', 1, 1); 
-
 INSERT INTO [User] (username, passhash, fullname, isbuyer, isseller)   
-
 VALUES ('sofiahernandez88', '5e884898da28047151d0e56f8dc6292773603d0d6aabbdd62a11ef721d1542d8', 'Sofia Hernandez', 0, 1); 
-
 INSERT INTO [User] (username, passhash, fullname, isbuyer, isseller)   
-
 VALUES ('williamjohnson01', '5e884898da28047151d0e56f8dc6292773603d0d6aabbdd62a11ef721d1542d8', 'William Johnson', 1, 0); 
-
 INSERT INTO [User] (username, passhash, fullname, isbuyer, isseller)   
-
 VALUES ('lauramarquez21', '5e884898da28047151d0e56f8dc6292773603d0d6aabbdd62a11ef721d1542d8', 'Laura Marquez', 1, 1); 
-
 INSERT INTO [User] (username, passhash, fullname, isbuyer, isseller)   
-
 VALUES ('danielwalker34', '5e884898da28047151d0e56f8dc6292773603d0d6aabbdd62a11ef721d1542d8', 'Daniel Walker', 1, 0); 
-
 INSERT INTO [User] (username, passhash, fullname, isbuyer, isseller)   
-
 VALUES ('lisasmith56', '5e884898da28047151d0e56f8dc6292773603d0d6aabbdd62a11ef721d1542d8', 'Lisa Smith', 0, 1); 
-
 INSERT INTO [User] (username, passhash, fullname, isbuyer, isseller)   
-
 VALUES ('robertjohnson99', '5e884898da28047151d0e56f8dc6292773603d0d6aabbdd62a11ef721d1542d8', 'Robert Johnson', 1, 0); 
-
 INSERT INTO [User] (username, passhash, fullname, isbuyer, isseller)   
-
 VALUES ('sarahwilliams12', '5e884898da28047151d0e56f8dc6292773603d0d6aabbdd62a11ef721d1542d8', 'Sarah Williams', 0, 1); 
-
 INSERT INTO [User] (username, passhash, fullname, isbuyer, isseller)   
-
 VALUES ('markthompson44', '5e884898da28047151d0e56f8dc6292773603d0d6aabbdd62a11ef721d1542d8', 'Mark Thompson', 1, 0); 
-
 INSERT INTO [User] (username, passhash, fullname, isbuyer, isseller)   
-
 VALUES ('amandabrown77', '5e884898da28047151d0e56f8dc6292773603d0d6aabbdd62a11ef721d1542d8', 'Amanda Brown', 0, 1); 
-
 INSERT INTO [User] (username, passhash, fullname, isbuyer, isseller)   
-
 VALUES ('josephmiller90', '5e884898da28047151d0e56f8dc6292773603d0d6aabbdd62a11ef721d1542d8', 'Joseph Miller', 1, 0); 
-
 INSERT INTO [User] (username, passhash, fullname, isbuyer, isseller)   
-
 VALUES ('kellyadams21', '5e884898da28047151d0e56f8dc6292773603d0d6aabbdd62a11ef721d1542d8', 'Kelly Adams', 0, 1); 
-
 INSERT INTO [User] (username, passhash, fullname, isbuyer, isseller)   
-
 VALUES ('briananderson66', '5e884898da28047151d0e56f8dc6292773603d0d6aabbdd62a11ef721d1542d8', 'Brian Anderson', 1, 1); 
-
 INSERT INTO [User] (username, passhash, fullname, isbuyer, isseller)   
-
 VALUES ('ericasanders34', '5e884898da28047151d0e56f8dc6292773603d0d6aabbdd62a11ef721d1542d8', 'Erica Sanders', 0, 1); 
-
 INSERT INTO [User] (username, passhash, fullname, isbuyer, isseller)   
-
 VALUES ('stephenlee56', '5e884898da28047151d0e56f8dc6292773603d0d6aabbdd62a11ef721d1542d8', 'Stephen Lee', 1, 1); 
-
 INSERT INTO [User] (username, passhash, fullname, isbuyer, isseller)   
-
 VALUES ('kimberlygreen11', '5e884898da28047151d0e56f8dc6292773603d0d6aabbdd62a11ef721d1542d8', 'Kimberly Green', 1, 1); 
 
- 
-
 -- USER EMAIL (31) 
-
 INSERT INTO User_email (username, email)   
 
 VALUES ('wahooo', 'wahooo@randomdomain.com'); 
@@ -261,7 +193,6 @@ VALUES ('kimberlygreen11', 'kimberlygreen11@shopmail.com');
  
 
 -- USER PHONENUMBER (31) 
-
 INSERT INTO User_phonenumber (username, phonenumber)   
 
 VALUES ('wahooo', '5550123456'); 
@@ -388,31 +319,14 @@ VALUES ('kimberlygreen11', '5558904567');
 
  
 
-PAYMENT METHOD (5) 
-
-INSERT INTO PaymentMethod (method_name)   
-
-VALUES ('Venmo'); 
-
-INSERT INTO PaymentMethod (method_name)   
-
-VALUES ('Paypal'); 
-
-INSERT INTO PaymentMethod (method_name)   
-
-VALUES ('Credit Card'); 
-
-INSERT INTO PaymentMethod (method_name)   
-
-VALUES ('Cash'); 
-
-INSERT INTO PaymentMethod (method_name)   
-
-VALUES ('Flex Dollars'); 
-
+-- PAYMENT METHOD (5) 
+INSERT INTO PaymentMethod (method_name) VALUES ('Venmo');
+INSERT INTO PaymentMethod (method_name) VALUES ('Paypal'); 
+INSERT INTO PaymentMethod (method_name) VALUES ('Credit Card'); 
+INSERT INTO PaymentMethod (method_name) VALUES ('Cash'); 
+INSERT INTO PaymentMethod (method_name) VALUES ('Flex Dollars'); 
  
 -- UVA LOCATION (30) 
-
 INSERT INTO UVALocation ([name], street, city, [state], zip) 
 
 VALUES ('Rice Hall', '85 Engineer''s Way', 'Charlottesville', 'VA', 22903); 
@@ -533,12 +447,7 @@ INSERT INTO UVALocation ([name], street, city, [state], zip)
 
 VALUES ('UVA School of Education and Human Development', '405 Emmet St S', 'Charlottesville', 'VA', 22904); 
 
- 
-
- 
-
 -- USER PAYMENT METHOD (51) 
-
 INSERT INTO User_PaymentMethods (username, payment_id)   
 
 VALUES ('johnsmith99', 1); -- Venmo 
@@ -745,9 +654,70 @@ VALUES ('wahooo', 1); -- Venmo
 
  
 
-USER UVALOCATIONS 
+-- USER UVALOCATIONS (31)
+INSERT INTO User_UVALocations (username, locationID) VALUES ('amandabrown77', 1);
+INSERT INTO User_UVALocations (username, locationID) VALUES ('briananderson66', 2);
+INSERT INTO User_UVALocations (username, locationID) VALUES ('brucelindley11', 3);
+INSERT INTO User_UVALocations (username, locationID) VALUES ('buyer12345', 4);
+INSERT INTO User_UVALocations (username, locationID) VALUES ('carlajones33', 5);
+INSERT INTO User_UVALocations (username, locationID) VALUES ('danielwalker34', 6);
+INSERT INTO User_UVALocations (username, locationID) VALUES ('davidclark44', 7);
+INSERT INTO User_UVALocations (username, locationID) VALUES ('emilybrown12', 8);
+INSERT INTO User_UVALocations (username, locationID) VALUES ('ericasanders34', 9);
+INSERT INTO User_UVALocations (username, locationID) VALUES ('jacobking33', 10);
+INSERT INTO User_UVALocations (username, locationID) VALUES ('janedoe88', 11);
+INSERT INTO User_UVALocations (username, locationID) VALUES ('johnsmith99', 12);
+INSERT INTO User_UVALocations (username, locationID) VALUES ('josephmiller90', 13);
+INSERT INTO User_UVALocations (username, locationID) VALUES ('kellyadams21', 14);
+INSERT INTO User_UVALocations (username, locationID) VALUES ('kimberlygreen11', 15);
+INSERT INTO User_UVALocations (username, locationID) VALUES ('lauramarquez21', 16); 
+INSERT INTO User_UVALocations (username, locationID) VALUES ('lisasmith56', 17); 
+INSERT INTO User_UVALocations (username, locationID) VALUES ('mariagarcia66', 18); 
+INSERT INTO User_UVALocations (username, locationID) VALUES ('markthompson44', 19);
+INSERT INTO User_UVALocations (username, locationID) VALUES ('michaeljordan', 20);
+INSERT INTO User_UVALocations (username, locationID) VALUES ('nancyallen98', 21);
+INSERT INTO User_UVALocations (username, locationID) VALUES ('peterparker77', 22);
+INSERT INTO User_UVALocations (username, locationID) VALUES ('robertjohnson99', 23);
+INSERT INTO User_UVALocations (username, locationID) VALUES ('samsamuel56', 24); 
+INSERT INTO User_UVALocations (username, locationID) VALUES ('sarahwilliams12', 25); 
+INSERT INTO User_UVALocations (username, locationID) VALUES ('seller98765', 26); 
+INSERT INTO User_UVALocations (username, locationID) VALUES ('sofiahernandez88', 27);
+INSERT INTO User_UVALocations (username, locationID) VALUES ('stephenlee56', 28); 
+INSERT INTO User_UVALocations (username, locationID) VALUES ('victorwayne22', 29); 
+INSERT INTO User_UVALocations (username, locationID) VALUES ('wahooo', 30); 
+INSERT INTO User_UVALocations (username, locationID) VALUES ('williamjohnson01', 1);
 
-USER RATES 
+-- USER RATES (30)
+INSERT INTO User_Rates (rater, ratee, rating, comment) VALUES ('briananderson66', 'amandabrown77', 4, 'Great seller!');
+INSERT INTO User_Rates (rater, ratee, rating, comment) VALUES ('buyer12345', 'brucelindley11', 5, 'Very satisfied!');
+INSERT INTO User_Rates (rater, ratee, rating, comment) VALUES ('carlajones33', 'ericasanders34', 3, 'Good transaction.');
+INSERT INTO User_Rates (rater, ratee, rating, comment) VALUES ('danielwalker34', 'janedoe88', 5, 'Fast shipping!');
+INSERT INTO User_Rates (rater, ratee, rating, comment) VALUES ('davidclark44', 'kellyadams21', 2, 'Item as described, but slow delivery.');
+INSERT INTO User_Rates (rater, ratee, rating, comment) VALUES ('emilybrown12', 'lisasmith56', 4, 'Good communication.');
+INSERT INTO User_Rates (rater, ratee, rating, comment) VALUES ('jacobking33', 'mariagarcia66', 5, 'Highly recommend!');
+INSERT INTO User_Rates (rater, ratee, rating, comment) VALUES ('johnsmith99', 'michaeljordan', 1, 'Poor experience.');
+INSERT INTO User_Rates (rater, ratee, rating, comment) VALUES ('josephmiller90', 'nancyallen98', 3, 'Average experience.');
+INSERT INTO User_Rates (rater, ratee, rating, comment) VALUES ('kimberlygreen11', 'samsamuel56', 5, 'Perfect transaction!');
+INSERT INTO User_Rates (rater, ratee, rating, comment) VALUES ('lauramarquez21', 'sarahwilliams12', 4, 'Good service.');
+INSERT INTO User_Rates (rater, ratee, rating, comment) VALUES ('markthompson44', 'seller98765', 2, 'Could have been better.');
+INSERT INTO User_Rates (rater, ratee, rating, comment) VALUES ('peterparker77', 'sofiahernandez88', 5, 'Excellent!');
+INSERT INTO User_Rates (rater, ratee, rating, comment) VALUES ('robertjohnson99', 'amandabrown77', 3, 'Okay transaction.');
+INSERT INTO User_Rates (rater, ratee, rating, comment) VALUES ('stephenlee56', 'brucelindley11', 4, 'Very smooth deal.');
+INSERT INTO User_Rates (rater, ratee, rating, comment) VALUES ('victorwayne22', 'ericasanders34', 5, 'Great product!');
+INSERT INTO User_Rates (rater, ratee, rating, comment) VALUES ('wahooo', 'janedoe88', 5, 'Will buy again!');
+INSERT INTO User_Rates (rater, ratee, rating, comment) VALUES ('williamjohnson01', 'kellyadams21', 3, 'Not bad.');
+INSERT INTO User_Rates (rater, ratee, rating, comment) VALUES ('briananderson66', 'lisasmith56', 4, 'Fast response.');
+INSERT INTO User_Rates (rater, ratee, rating, comment) VALUES ('buyer12345', 'mariagarcia66', 5, 'Wonderful seller!');
+INSERT INTO User_Rates (rater, ratee, rating, comment) VALUES ('carlajones33', 'michaeljordan', 2, 'Item not as described.');
+INSERT INTO User_Rates (rater, ratee, rating, comment) VALUES ('danielwalker34', 'nancyallen98', 5, 'Fantastic service.');
+INSERT INTO User_Rates (rater, ratee, rating, comment) VALUES ('davidclark44', 'samsamuel56', 4, 'Smooth transaction.');
+INSERT INTO User_Rates (rater, ratee, rating, comment) VALUES ('emilybrown12', 'sarahwilliams12', 3, 'Average deal.');
+INSERT INTO User_Rates (rater, ratee, rating, comment) VALUES ('jacobking33', 'seller98765', 5, 'Highly recommended.');
+INSERT INTO User_Rates (rater, ratee, rating, comment) VALUES ('johnsmith99', 'sofiahernandez88', 4, 'Quick and easy.');
+INSERT INTO User_Rates (rater, ratee, rating, comment) VALUES ('josephmiller90', 'amandabrown77', 5, 'Fantastic experience.');
+INSERT INTO User_Rates (rater, ratee, rating, comment) VALUES ('kimberlygreen11', 'brucelindley11', 2, 'Could improve.');
+INSERT INTO User_Rates (rater, ratee, rating, comment) VALUES ('lauramarquez21', 'ericasanders34', 5, 'Very pleased.');
+INSERT INTO User_Rates (rater, ratee, rating, comment) VALUES ('lauramarquez21', 'brucelindley11', 5, 'Amazing');
 
 -- CAR (30) 
 
@@ -1168,24 +1138,10 @@ VALUES ('sofiahernandez88_third_paypal_username', 'sofiahernandez88');
  
 
 -- CONDITION (4) 
-
-INSERT INTO Condition (condition_name)   
-
-VALUES ('New'); 
-
-INSERT INTO Condition (condition_name)   
-
-VALUES ('Excellent'); 
-
-INSERT INTO Condition (condition_name)   
-
-VALUES ('Good'); 
-
-INSERT INTO Condition (condition_name)   
-
-VALUES ('Bad'); 
-
- 
+INSERT INTO Condition (condition_name) VALUES ('New'); 
+INSERT INTO Condition (condition_name) VALUES ('Excellent'); 
+INSERT INTO Condition (condition_name) VALUES ('Good'); 
+INSERT INTO Condition (condition_name) VALUES ('Bad'); 
 
 -- LISTED ITEM (30) 
 
@@ -1312,159 +1268,142 @@ VALUES ('emilybrown12', NULL, 'Toaster Oven that makes toast and can serve as an
  
 
 -- WISH LIST (31) 
-
 INSERT INTO WishList (username) VALUES ('amandabrown77'); 
-
 INSERT INTO WishList (username) VALUES ('briananderson66'); 
-
 INSERT INTO WishList (username) VALUES ('brucelindley11'); 
-
 INSERT INTO WishList (username) VALUES ('buyer12345'); 
-
 INSERT INTO WishList (username) VALUES ('carlajones33'); 
-
 INSERT INTO WishList (username) VALUES ('danielwalker34'); 
-
 INSERT INTO WishList (username) VALUES ('davidclark44'); 
-
 INSERT INTO WishList (username) VALUES ('emilybrown12'); 
-
 INSERT INTO WishList (username) VALUES ('ericasanders34'); 
-
 INSERT INTO WishList (username) VALUES ('jacobking33'); 
-
-INSERT INTO WishList (username) VALUES ('janedoe88'); 
-
+INSERT INTO WishList (username) VALUES ('janedoe88');
 INSERT INTO WishList (username) VALUES ('johnsmith99'); 
-
 INSERT INTO WishList (username) VALUES ('josephmiller90'); 
-
 INSERT INTO WishList (username) VALUES ('kellyadams21'); 
-
 INSERT INTO WishList (username) VALUES ('kimberlygreen11'); 
-
 INSERT INTO WishList (username) VALUES ('lauramarquez21'); 
-
 INSERT INTO WishList (username) VALUES ('lisasmith56'); 
-
 INSERT INTO WishList (username) VALUES ('mariagarcia66'); 
-
 INSERT INTO WishList (username) VALUES ('markthompson44'); 
-
 INSERT INTO WishList (username) VALUES ('michaeljordan'); 
-
 INSERT INTO WishList (username) VALUES ('nancyallen98'); 
-
 INSERT INTO WishList (username) VALUES ('peterparker77'); 
-
-INSERT INTO WishList (username) VALUES ('robertjohnson99'); 
-
+INSERT INTO WishList (username) VALUES ('robertjohnson99');
 INSERT INTO WishList (username) VALUES ('samsamuel56'); 
-
 INSERT INTO WishList (username) VALUES ('sarahwilliams12'); 
-
 INSERT INTO WishList (username) VALUES ('seller98765'); 
-
 INSERT INTO WishList (username) VALUES ('sofiahernandez88'); 
-
 INSERT INTO WishList (username) VALUES ('stephenlee56'); 
-
 INSERT INTO WishList (username) VALUES ('victorwayne22'); 
-
 INSERT INTO WishList (username) VALUES ('wahooo'); 
-
 INSERT INTO WishList (username) VALUES ('williamjohnson01'); 
 
- 
+-- LISTED ITEM WISH LIST (30)
+INSERT INTO ListedItem_WishList (wishlist_id, item_id) VALUES (5, 1);
+INSERT INTO ListedItem_WishList (wishlist_id, item_id) VALUES (5, 2);
+INSERT INTO ListedItem_WishList (wishlist_id, item_id) VALUES (5, 3);
+INSERT INTO ListedItem_WishList (wishlist_id, item_id) VALUES (5, 4);
+INSERT INTO ListedItem_WishList (wishlist_id, item_id) VALUES (5, 5);
+INSERT INTO ListedItem_WishList (wishlist_id, item_id) VALUES (5, 6);
+INSERT INTO ListedItem_WishList (wishlist_id, item_id) VALUES (5, 7);
+INSERT INTO ListedItem_WishList (wishlist_id, item_id) VALUES (5, 8);
+INSERT INTO ListedItem_WishList (wishlist_id, item_id) VALUES (5, 9);
+INSERT INTO ListedItem_WishList (wishlist_id, item_id) VALUES (5, 10);
+INSERT INTO ListedItem_WishList (wishlist_id, item_id) VALUES (5, 11);
+INSERT INTO ListedItem_WishList (wishlist_id, item_id) VALUES (5, 12);
+INSERT INTO ListedItem_WishList (wishlist_id, item_id) VALUES (5, 13);
+INSERT INTO ListedItem_WishList (wishlist_id, item_id) VALUES (5, 14);
+INSERT INTO ListedItem_WishList (wishlist_id, item_id) VALUES (5, 15);
+INSERT INTO ListedItem_WishList (wishlist_id, item_id) VALUES (5, 16);
+INSERT INTO ListedItem_WishList (wishlist_id, item_id) VALUES (5, 17);
+INSERT INTO ListedItem_WishList (wishlist_id, item_id) VALUES (5, 18);
+INSERT INTO ListedItem_WishList (wishlist_id, item_id) VALUES (5, 19);
+INSERT INTO ListedItem_WishList (wishlist_id, item_id) VALUES (5, 20);
+INSERT INTO ListedItem_WishList (wishlist_id, item_id) VALUES (5, 21);
+INSERT INTO ListedItem_WishList (wishlist_id, item_id) VALUES (5, 22);
+INSERT INTO ListedItem_WishList (wishlist_id, item_id) VALUES (5, 23);
+INSERT INTO ListedItem_WishList (wishlist_id, item_id) VALUES (5, 24);
+INSERT INTO ListedItem_WishList (wishlist_id, item_id) VALUES (5, 25);
+INSERT INTO ListedItem_WishList (wishlist_id, item_id) VALUES (5, 26);
+INSERT INTO ListedItem_WishList (wishlist_id, item_id) VALUES (5, 27);
+INSERT INTO ListedItem_WishList (wishlist_id, item_id) VALUES (5, 28);
+INSERT INTO ListedItem_WishList (wishlist_id, item_id) VALUES (5, 29);
+INSERT INTO ListedItem_WishList (wishlist_id, item_id) VALUES (5, 30);
 
-LISTED ITEM WISH LIST 
-
-SHOPPING CART (31) 
-
+-- SHOPPING CART (31) 
 INSERT INTO ShoppingCart (username) VALUES ('amandabrown77'); 
-
 INSERT INTO ShoppingCart (username) VALUES ('briananderson66'); 
-
 INSERT INTO ShoppingCart (username) VALUES ('brucelindley11'); 
-
 INSERT INTO ShoppingCart (username) VALUES ('buyer12345'); 
-
 INSERT INTO ShoppingCart (username) VALUES ('carlajones33'); 
-
 INSERT INTO ShoppingCart (username) VALUES ('danielwalker34'); 
-
 INSERT INTO ShoppingCart (username) VALUES ('davidclark44'); 
-
 INSERT INTO ShoppingCart (username) VALUES ('emilybrown12'); 
-
 INSERT INTO ShoppingCart (username) VALUES ('ericasanders34'); 
-
 INSERT INTO ShoppingCart (username) VALUES ('jacobking33'); 
-
 INSERT INTO ShoppingCart (username) VALUES ('janedoe88'); 
-
 INSERT INTO ShoppingCart (username) VALUES ('johnsmith99'); 
-
 INSERT INTO ShoppingCart (username) VALUES ('josephmiller90'); 
-
 INSERT INTO ShoppingCart (username) VALUES ('kellyadams21'); 
-
 INSERT INTO ShoppingCart (username) VALUES ('kimberlygreen11'); 
-
 INSERT INTO ShoppingCart (username) VALUES ('lauramarquez21'); 
-
 INSERT INTO ShoppingCart (username) VALUES ('lisasmith56'); 
-
 INSERT INTO ShoppingCart (username) VALUES ('mariagarcia66'); 
-
 INSERT INTO ShoppingCart (username) VALUES ('markthompson44'); 
-
 INSERT INTO ShoppingCart (username) VALUES ('michaeljordan'); 
-
 INSERT INTO ShoppingCart (username) VALUES ('nancyallen98'); 
-
 INSERT INTO ShoppingCart (username) VALUES ('peterparker77'); 
-
 INSERT INTO ShoppingCart (username) VALUES ('robertjohnson99'); 
-
 INSERT INTO ShoppingCart (username) VALUES ('samsamuel56'); 
-
 INSERT INTO ShoppingCart (username) VALUES ('sarahwilliams12'); 
-
 INSERT INTO ShoppingCart (username) VALUES ('seller98765'); 
-
 INSERT INTO ShoppingCart (username) VALUES ('sofiahernandez88'); 
-
 INSERT INTO ShoppingCart (username) VALUES ('stephenlee56'); 
-
 INSERT INTO ShoppingCart (username) VALUES ('victorwayne22'); 
-
 INSERT INTO ShoppingCart (username) VALUES ('wahooo'); 
-
 INSERT INTO ShoppingCart (username) VALUES ('williamjohnson01'); 
 
- 
+-- LISTED ITEM SHOPPING CART (30)
+INSERT INTO ListedItem_ShoppingCart (item_id, shoppingcart_id) VALUES (1, 4);
+INSERT INTO ListedItem_ShoppingCart (item_id, shoppingcart_id) VALUES (2, 4);
+INSERT INTO ListedItem_ShoppingCart (item_id, shoppingcart_id) VALUES (3, 4);
+INSERT INTO ListedItem_ShoppingCart (item_id, shoppingcart_id) VALUES (4, 4);
+INSERT INTO ListedItem_ShoppingCart (item_id, shoppingcart_id) VALUES (5, 4);
+INSERT INTO ListedItem_ShoppingCart (item_id, shoppingcart_id) VALUES (6, 4);
+INSERT INTO ListedItem_ShoppingCart (item_id, shoppingcart_id) VALUES (7, 4);
+INSERT INTO ListedItem_ShoppingCart (item_id, shoppingcart_id) VALUES (8, 4);
+INSERT INTO ListedItem_ShoppingCart (item_id, shoppingcart_id) VALUES (9, 4);
+INSERT INTO ListedItem_ShoppingCart (item_id, shoppingcart_id) VALUES (10, 4);
+INSERT INTO ListedItem_ShoppingCart (item_id, shoppingcart_id) VALUES (11, 4);
+INSERT INTO ListedItem_ShoppingCart (item_id, shoppingcart_id) VALUES (12, 4);
+INSERT INTO ListedItem_ShoppingCart (item_id, shoppingcart_id) VALUES (13, 4);
+INSERT INTO ListedItem_ShoppingCart (item_id, shoppingcart_id) VALUES (14, 4);
+INSERT INTO ListedItem_ShoppingCart (item_id, shoppingcart_id) VALUES (15, 4);
+INSERT INTO ListedItem_ShoppingCart (item_id, shoppingcart_id) VALUES (16, 4);
+INSERT INTO ListedItem_ShoppingCart (item_id, shoppingcart_id) VALUES (17, 4);
+INSERT INTO ListedItem_ShoppingCart (item_id, shoppingcart_id) VALUES (18, 4);
+INSERT INTO ListedItem_ShoppingCart (item_id, shoppingcart_id) VALUES (19, 4);
+INSERT INTO ListedItem_ShoppingCart (item_id, shoppingcart_id) VALUES (20, 4);
+INSERT INTO ListedItem_ShoppingCart (item_id, shoppingcart_id) VALUES (21, 4);
+INSERT INTO ListedItem_ShoppingCart (item_id, shoppingcart_id) VALUES (22, 4);
+INSERT INTO ListedItem_ShoppingCart (item_id, shoppingcart_id) VALUES (23, 4);
+INSERT INTO ListedItem_ShoppingCart (item_id, shoppingcart_id) VALUES (24, 4);
+INSERT INTO ListedItem_ShoppingCart (item_id, shoppingcart_id) VALUES (25, 4);
+INSERT INTO ListedItem_ShoppingCart (item_id, shoppingcart_id) VALUES (26, 4);
+INSERT INTO ListedItem_ShoppingCart (item_id, shoppingcart_id) VALUES (27, 4);
+INSERT INTO ListedItem_ShoppingCart (item_id, shoppingcart_id) VALUES (28, 4);
+INSERT INTO ListedItem_ShoppingCart (item_id, shoppingcart_id) VALUES (29, 4);
+INSERT INTO ListedItem_ShoppingCart (item_id, shoppingcart_id) VALUES (30, 4);
 
-LISTED ITEM SHOPPING CART 
 
 -- CATEGORY (3) 
-
-INSERT INTO Category (category_name)   
-
-VALUES ('Technology'); 
-
-INSERT INTO Category (category_name)   
-
-VALUES ('Clothing'); 
-
-INSERT INTO Category (category_name)   
-
-VALUES ('Vehicle'); 
-
- 
+INSERT INTO Category (category_name) VALUES ('Technology');
+INSERT INTO Category (category_name) VALUES ('Clothing'); 
+INSERT INTO Category (category_name) VALUES ('Vehicle'); 
 
 -- LISTED ITEM CATEGORY (30) 
-
 INSERT INTO ListedItem_Category (item_id, category_id)   
 
 VALUES (1, 3);  -- Mountain Bike 
