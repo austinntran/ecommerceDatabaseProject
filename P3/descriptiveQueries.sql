@@ -26,7 +26,20 @@ FROM (
 );
 
 -- 2 subqueries
-
+-- Get all payment methods for users who are buyers
+SELECT pm.method_name
+FROM PaymentMethod pm
+WHERE pm.payment_id IN (
+    SELECT p.payment_id
+    FROM User_Payment p
+    JOIN [User] u ON p.username = u.username
+    WHERE u.isbuyer = 1
+);
+-- Find sellers who have more than one email registered
+SELECT u.username, u.fullname
+FROM [User] u
+WHERE u.isseller = 1 AND 
+      (SELECT COUNT(*) FROM User_email e WHERE e.username = u.username) > 1;
 
 -- 4 anything that uses something above
 -- Get average user rating, listed by their fullname
