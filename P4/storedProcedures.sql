@@ -54,5 +54,18 @@ BEGIN
 END;
 
 
--- 3. Remove item from wishlist/shopping cart when bought
+-- 3. Remove item from wishlist/shopping cart
 -- important to ensure item can no longer be bought
+CREATE PROCEDURE RemoveItem
+    @item_id INT
+AS
+BEGIN
+    IF (NOT EXISTS (SELECT item_id FROM ListedItem_WishList WHERE item_id=@item_id))
+    BEGIN
+        RAISERROR('Item does not exist in any wishlist', 16, 1)
+        RETURN;
+    END;
+    
+    DELETE FROM ListedItem_WishList 
+    WHERE item_id=@item_id; 
+END;
