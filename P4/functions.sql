@@ -9,13 +9,18 @@ CREATE FUNCTION GetAvailableItems
 RETURNS TABLE
 AS 
 RETURN (
-    SELECT LC.item_id
+    SELECT LI.name, LC.item_id
     FROM ListedItem_Category LC
-    JOIN Category C ON LC.category_id = C.category_id
-    WHERE @category = C.category_name
+    JOIN Category C ON LC.category_id = C.category_id 
+    JOIN ListedItem LI ON LC.item_id = LI.item_id
+    WHERE @category = C.category_name AND LI.purchase_date IS NULL
 );
 
+-- Checking Function
+SELECT * FROM GetAvailableItems('Technology');
+
 -- 2. Select all items listed by a username
+
 CREATE FUNCTION GetUserItems 
 (
     @username varchar(100)
@@ -28,6 +33,7 @@ RETURN (
     WHERE @username = LI.seller_username 
 );
 
+-- Checking Function
 SELECT * FROM GetUserItems('amandabrown77');
 
 -- 3. Select all items listed after a certain date cost at most a specified price
