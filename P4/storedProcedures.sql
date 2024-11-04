@@ -47,6 +47,11 @@ BEGIN
         RAISERROR('Item does not exist', 16, 1)
         RETURN;
     END;
+    IF (EXISTS (SELECT buyer_username FROM ListedItem WHERE buyer_username IS NOT NULL AND item_id=@item_id))
+    BEGIN
+        RAISERROR('Item was already bought', 16, 1)
+        RETURN;
+    END;
 
     UPDATE ListedItem
     SET buyer_username=@buyer_username, purchase_date=@purchase_date
@@ -54,8 +59,8 @@ BEGIN
 END;
 
 
--- 3. Remove item from wishlist/shopping cart
--- important to ensure item can no longer be bought
+-- 3. Remove item from wishlist
+-- important to ensure items that are already bought can be removed from a user's wishlist
 CREATE PROCEDURE RemoveItem
     @item_id INT
 AS
