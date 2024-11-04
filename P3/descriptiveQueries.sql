@@ -45,7 +45,7 @@ WHERE u.isseller = 1 AND
 -- Get average user rating, listed by their fullname
 SELECT fullname, AVG(rating) AS average_rating 
 FROM (
-    USER INNER JOIN User_Rates ON User.username = rating.ratee
+    [User] INNER JOIN User_Rates ON User.username = rating.ratee
 ) GROUP BY User.fullname;
 
 -- Aggregate: Select the the sum of items each seller is selling
