@@ -10,9 +10,8 @@ CREATE FUNCTION GetLatestCheapItems
 )
 RETURNS TABLE
 AS
-BEGIN
-    RETURN (
-        SELECT
-    
-    );
-END;
+RETURN (
+    SELECT *
+    FROM ListedItem
+    WHERE list_date >= @OldestDate AND price <= @MaxPrice
+);
