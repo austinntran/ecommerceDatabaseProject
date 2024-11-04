@@ -37,7 +37,7 @@ CREATE PROCEDURE UpdateItem
     @purchase_date DATE
 AS
 BEGIN
-    IF (NOT EXISTS (SELECT username FROM [Users] WHERE username=@buyer_username))
+    IF (NOT EXISTS (SELECT username FROM [User] WHERE username=@buyer_username))
     BEGIN
         RAISERROR('Buyer username does not exist', 16, 1)
         RETURN;
