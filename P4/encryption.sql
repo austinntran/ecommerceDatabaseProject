@@ -1,0 +1,12 @@
+CREATE MASTER KEY ENCRYPTION BY PASSWORD = 'Wahoo4630!IloveDatabaseClassYEYE';
+
+CREATE CERTIFICATE UserPasswordCert
+WITH SUBJECT = 'Certificate for User Password Has Encryption';
+
+CREATE SYMMETRIC KEY UserPasswordKey
+WITH ALGORITHM = AES_256
+ENCRYPTION BY CERTIFICATE UserPasswordCert;
+
+ALTER TABLE [User]
+ADD EncryptedPasswordHash VARBINARY(128);
+

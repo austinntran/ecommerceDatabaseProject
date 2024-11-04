@@ -20,8 +20,13 @@ BEGIN
         RETURN;
     END;
 
-    INSERT INTO Customer (username, passhash, fullname, isbuyer, isseller)
-    VALUES (@username, @passhash, @fullname, @isbuyer, @isseller);
+    OPEN SYMMETRIC KEY UserPasswordKey
+    DECRYPTION BY CERTIFICATE UserPasswordCert;
+
+    INSERT INTO Customer (username, EncryptedPasswordHash, fullname, isbuyer, isseller)
+    VALUES (@username, EncryptByKey(Key_GUID('UserPasswordKey'), @passhash), @fullname, @isbuyer, @isseller);
+
+    CLOSE SYMMETRIC KEY UserPasswordKey;
 END;
 
 -- 2. Update listed item with buyer and purchase date

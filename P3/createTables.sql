@@ -9,7 +9,7 @@ CREATE TABLE [User] (
 
     username varchar(50) not null check (LEN(username) > 5), 
 
-    passhash varchar(100) not null,  
+    passhash varchar(100),  
 
     fullname varchar(100) not null,  
 

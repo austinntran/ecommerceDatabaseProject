@@ -21,5 +21,5 @@ CREATE VIEW SoldItems AS
     SELECT l.seller_username, l.description, l.quantity, l.list_date, c.condition_name
     FROM ListedItem l Inner JOIN Condition c
     ON l.condition_id = c.condition_id
-    WHERE l.buyer_username IS NOT NULL;
+    WHERE l.buyer_username IS NOT NULL
 );
