@@ -23,7 +23,7 @@ BEGIN
     OPEN SYMMETRIC KEY UserPasswordKey
     DECRYPTION BY CERTIFICATE UserPasswordCert;
 
-    INSERT INTO Customer (username, EncryptedPasswordHash, fullname, isbuyer, isseller)
+    INSERT INTO [User] (username, EncryptedPasswordHash, fullname, isbuyer, isseller)
     VALUES (@username, EncryptByKey(Key_GUID('UserPasswordKey'), @passhash), @fullname, @isbuyer, @isseller);
 
     CLOSE SYMMETRIC KEY UserPasswordKey;
